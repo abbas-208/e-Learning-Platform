@@ -107,6 +107,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
+  page:
+    dependency: "direct main"
+    description:
+      name: page
+      sha256: "08ca5e47d9365753ea3a1bbd142d0e564fc148decfb3306e9859144b2c272383"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.2.1"
+  page_transition:
+    dependency: "direct main"
+    description:
+      name: page_transition
+      sha256: dee976b1f23de9bbef5cd512fe567e9f6278caee11f5eaca9a2115c19dc49ef6
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.0"
   path:
     dependency: transitive
     description:
