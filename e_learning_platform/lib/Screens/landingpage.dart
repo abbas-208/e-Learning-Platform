@@ -1,6 +1,6 @@
-import 'dart:async';
-
+import 'package:e_learning_platform/Screens/SigninOptions/signIn.dart';
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -12,12 +12,50 @@ class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.red,
-        centerTitle: true,
-        title: Text('Landing page'),
+      backgroundColor: Colors.black,
+      body: Container(
+        child: Center(
+          child: SizedBox(
+            height: 400.0,
+            width: 400.0,
+            child: Image.asset(
+              'assets/images/landingpagebg.jpg',
+              fit: BoxFit.fitHeight,
+              colorBlendMode: BlendMode.darken,
+              color: Colors.black,
+            ),
+          ),
+        ),
       ),
-      body: Container(),
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.blue,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            MaterialButton(
+              onPressed: () {
+                print("Pressed");
+              },
+              child: Text(
+                'Browse',
+                style: TextStyle(color: Colors.grey.shade300, fontSize: 20.0),
+              ),
+            ),
+            MaterialButton(
+              onPressed: () {
+                Navigator.pushReplacement(
+                    context,
+                    PageTransition(
+                        child: SignIn(), type: PageTransitionType.bottomToTop));
+              },
+              child: Text(
+                'Sign in',
+                style: TextStyle(color: Colors.grey.shade300, fontSize: 20.0),
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
