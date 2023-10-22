@@ -22,7 +22,7 @@ class _LandingPageState extends State<LandingPage> {
               'assets/images/landingpagebg.jpg',
               fit: BoxFit.fitHeight,
               colorBlendMode: BlendMode.darken,
-              color: Colors.black,
+              color: Colors.black54,
             ),
           ),
         ),
