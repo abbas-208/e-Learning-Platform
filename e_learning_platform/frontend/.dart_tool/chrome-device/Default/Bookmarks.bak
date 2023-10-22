@@ -1,0 +1,120 @@
+{
+   "checksum": "968a5269afb938db826e92c71983e6ec",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13310107675000000",
+            "date_last_used": "0",
+            "guid": "8cceb1bb-6a68-430e-bce4-9b63802a6f2d",
+            "id": "14",
+            "name": "Getting Started",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.mozilla.org/firefox/central/"
+         } ],
+         "date_added": "13345733470392776",
+         "date_last_used": "0",
+         "date_modified": "13310107675000000",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "children": [ {
+               "children": [ {
+                  "date_added": "13310107675000000",
+                  "date_last_used": "0",
+                  "guid": "0b8466b0-f97d-4688-803e-14d25e8bdde0",
+                  "id": "9",
+                  "name": "Get Help",
+                  "show_icon": false,
+                  "source": "sync",
+                  "type": "url",
+                  "url": "https://support.mozilla.org/products/firefox"
+               }, {
+                  "date_added": "13310107675000000",
+                  "date_last_used": "0",
+                  "guid": "01b647ed-1481-449e-94c6-e5af5b1ff790",
+                  "id": "10",
+                  "name": "Customize Firefox",
+                  "show_icon": false,
+                  "source": "sync",
+                  "type": "url",
+                  "url": "https://support.mozilla.org/kb/customize-firefox-controls-buttons-and-toolbars?utm_source=firefox-browser&utm_medium=default-bookmarks&utm_campaign=customize"
+               }, {
+                  "date_added": "13310107675000000",
+                  "date_last_used": "0",
+                  "guid": "5119efd1-1878-4f57-a835-c702b5801c55",
+                  "id": "11",
+                  "name": "Get Involved",
+                  "show_icon": false,
+                  "source": "sync",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/contribute/"
+               }, {
+                  "date_added": "13310107675000000",
+                  "date_last_used": "0",
+                  "guid": "e60db6a5-9caf-4bcb-86a2-daf513766c4f",
+                  "id": "12",
+                  "name": "About Us",
+                  "show_icon": false,
+                  "source": "sync",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/about/"
+               }, {
+                  "date_added": "13323203698638323",
+                  "date_last_used": "0",
+                  "guid": "bb7ee091-c991-4fb7-a361-2ee4630e2c72",
+                  "id": "13",
+                  "name": "Extensions",
+                  "show_icon": false,
+                  "source": "sync",
+                  "type": "url",
+                  "url": "edge://extensions/shortcuts"
+               } ],
+               "date_added": "13310239516578243",
+               "date_last_used": "0",
+               "date_modified": "13323203698638323",
+               "guid": "f65be214-1c38-4d62-89ed-c0f70c213705",
+               "id": "8",
+               "name": "Mozilla Firefox",
+               "source": "unknown",
+               "type": "folder"
+            } ],
+            "date_added": "13310239516578204",
+            "date_last_used": "0",
+            "date_modified": "13310239516578204",
+            "guid": "e01b5071-4195-4ecf-bc29-a2af21621375",
+            "id": "7",
+            "name": "Mozilla Firefox Bookmarks Menu",
+            "source": "unknown",
+            "type": "folder"
+         } ],
+         "date_added": "13345733470392782",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13345733470392784",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CjEKDgiIgQISCJPD/RqMAQAAEgAgASoYYnNlVFJPbXREdWxyK1ZHckZFNjJOZz09oAYMEqgBCA0SowEKHC85MmgvYVR5ZVc1VHZpTFVhZzJ2VzM2MUExZz0SJGJiN2VlMDkxLWM5OTEtNGZiNy1hMzYxLTJlZTQ2MzBlMmM3MhgAIAAoADCai/Lg7TA46ovy4O0wQOqL8uDtMEocOGR6Ymw4bXpaU2RuWWxmMFdYZm45dmdDRGFNPVofIh32amhmMnpCUk1LNXpOc0huUVNHN3lXVlJjMW1NPWW3aEC7EokBCAEShAEKHHl4Si82ZnZrZWNyN2twNUVRekI0dFdMcGRiRT0SJDdmZjRhMmU4LTYwYzUtNTY1Yi05OGFhLTA3MzRkZWU4ZWFlZRgAIAAoADD2tOnYsTA4+Leh3vgvQPi3od74L0ocYVJDV0xnaEY5YjVJbnFLSUR2dUovanZRa0ZjPVoAZQAAAAASqAEIDBKjAQocNytYbnlRN3gxSWM4UkRMZE5zRGpZdlJoSFpVPRIkZTYwZGI2YTUtOWNhZi00YmNiLTg2YTItZGFmNTEzNzY2YzRmGAAgACgAMPKVzr+9MDjcl86/vTBA3JfOv70wShxpcm9XWnF5dEZZSFp3WmNyVitxSHMyeHZ5VW89Wh8iHe1BaGMyU3ZucHRzQ1FWZ0FsdjJ2K0pEZ0FWQjA9ZQAAAAASqAEICxKjAQocTzdWL0lweE5WQ1gvcFVHT08rQ2dEYzg0VjFjPRIkNTExOWVmZDEtMTg3OC00ZjU3LWE4MzUtYzcwMmI1ODAxYzU1GAAgACgAMPKVzr+9MDi9l86/vTBAvZfOv70wShxYSVM3dlJvRzQrWUtYWnpMYkFVNVRBQTJHNjA9Wh8iHdtpNDV3V0hWQXF5SlZyRFJKSzJFR2lGaHRadXc9ZQAAAAASpwEICBKiAQocMEJrUVlYeGdHSkw1OFRzVGZjZjZZT09GcmY4PRIkZjY1YmUyMTQtMWMzOC00ZDYyLTg5ZWQtYzBmNzBjMjEzNzA1GAAgACgAMPKVzr+9MDjAls6/vTBAwJbOv70wShxNQmRIM09NTlFoTEEzQXgrVngwL1ZFOWxIVUk9Wh4iHEh5eXVMTWhuS2E1OXB3RUhHMnZKaS9rUkdzOD1lAAAAABKJAQgCEoQBChxZY1NUb252RVNQd3FDczRMMmNyVmh2NjhMOTg9EiRmODJkNzlhMi1kZDA2LTUwYzEtOWJiOS1jNjIzMzM4Nzg1MmEYACAAKAAw9rTp2LEwOJe4od74L0CXuKHe+C9KHG9QVmtod0JSYlY2NUtDV1IyK0lPTkhXb091OD1aAGUAAAAAEqcBCAkSogEKHEt4aEh6UUFFcCt0SzBvankzZzFySlVmaFgvaz0SJDBiODQ2NmIwLWY5N2QtNDY4OC04MDNlLTE0ZDI1ZThiZGRlMBgAIAAoADDylc6/vTA4jpfOv70wQI6Xzr+9MEocd21zdjRqUjlBMGNyQVZaV3F4N2x5cTZtQ0VnPVoeIhxvTENkdjBTSU9Hb1NzVGNVbE1UdndFZWNFOGc9ZQAAAAASpwEIDhKiAQocSllsNFRVdTZRTmdQSFVKV3FibUxSdjZRSW9FPRIkOGNjZWIxYmItNmE2OC00MzBlLWJjZTQtOWI2MzgwMmE2ZjJkGAAgAigCMJKH99fBMTiBls6/vTBA7On218ExShxlNllKdUJtK21KS2gzM0VWMHQrSGxNaDFwR1k9Wh4iHDhROHNFTll2UFBIdzd1OHRvcmJuSCs1Z2tmTT1lvvKp6hKoAQgKEqMBChw3KzgxMnlYTmFIVCtrV3lsNGYzVStoWU9XSTg9EiQwMWI2NDdlZC0xNDgxLTQ0OWUtOTRjNi1lNWFmNWIxZmY3OTAYACAAKAAw8pXOv70wOJ2Xzr+9MECdl86/vTBKHENLeDJYQmJHVi9wUGFwNmw5VjJSNWhUblBqST1aHyIdt0lNM1lRcjZSQ2Q5d1VXSHVsOFRhWlIzNUZxND1lAAAAABKnAQgHEqIBChxROEFZT2UzNzc3bkUxa0xvZGltNzRvTjM2V1k9EiRlMDFiNTA3MS00MTk1LTRlY2YtYmMyOS1hMmFmMjE2MjEzNzUYACAAKAAw8pXOv70wOKCWzr+9MECgls6/vTBKHHZRTDVEd3djNTVramxCa3Iwa0EwbnlPZFEwMD1aHiIcTTFCL1NDTFEvNUplZ2RkYWhhcTFQRHZKYnZrPWUAAAAAEokBCAMShAEKHG5qZ0R1ODhlQ3J2WHA4NnBEN2ZIR2NxRnA4OD0SJGZkMDk1MzA3LTY1NGMtNTI2Ni1hMWFiLWZhNGM5OTliMWU0NBgAIAAoADD2tOnYsTA4lLmh3vgvQJS5od74L0oceXpOQjAxY241NEE3Y1JVMHVUKy9QZ21UdFVvPVoAZQAAAAAwADgA",
+   "version": 1
+}
