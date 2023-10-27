@@ -200,7 +200,161 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                   backgroundColor: Colors.black,
                 ),
-                
+                body: SingleChildScrollView(
+                  child: Container(
+                      child: Column(children: [
+                    Padding(
+                      padding: EdgeInsets.only(top: 10.0, left: 5.0),
+                      child: Text(
+                        "Courses By Saqib",
+                        textAlign: TextAlign.start,
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20.0),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 5.0, left: 0.0),
+                      child: SizedBox(
+                          height: 180.0,
+                          child: Consumer<CourseProvider>(
+                              builder: (context, category, snapshot) {
+                            if (category.cd.length == 0) {
+                              return Center(child: CircularProgressIndicator());
+                            }
+                            return ListView.builder(
+                                scrollDirection: Axis.horizontal,
+                                itemCount: category.cd.length,
+                                itemBuilder: (context, index) {
+                                  CategoryData categoryData =
+                                      category.cd[index];
+                                  return Padding(
+                                    padding: const EdgeInsets.only(left: 3.0),
+                                    child: Container(
+                                      child: Row(children: [
+                                        techCourses(
+                                            context,
+                                            categoryData.categoryPic,
+                                            categoryData.categoryName,
+                                            categoryData.id),
+                                      ]),
+                                    ),
+                                  );
+                                });
+                          })),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 15.0, left: 5.0),
+                      child: Text(
+                        "Recently Added Courses",
+                        textAlign: TextAlign.start,
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20.0),
+                      ),
+                    ),
+                    SizedBox(
+                        height: 180.0,
+                        child: Consumer<CourseProvider>(
+                            builder: (context, courses, snapshot) {
+                          if (courses.recent.length == 0) {
+                            return Center(child: CircularProgressIndicator());
+                          }
+                          return ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: courses.recent.length,
+                              itemBuilder: (context, index) {
+                                CourseData courseData = courses.recent[index];
+                                return Padding(
+                                  padding: const EdgeInsets.only(left: 3.0),
+                                  child: Container(
+                                    child: Row(children: [
+                                      recentlyAddedCourse(
+                                          context,
+                                          courseData.coursePic,
+                                          courseData.courseName,
+                                          courseData.channelName,
+                                          courseData.id,
+                                          courseData.courseRatings,
+                                          courseData.courseUrl,
+                                          courseData.courseDescription,
+                                          courseData.ratedBy),
+                                    ]),
+                                  ),
+                                );
+                              });
+                        })),
+                    Padding(
+                      padding: EdgeInsets.only(top: 15.0, left: 5.0),
+                      child: Text(
+                        "Highest Rated Courses",
+                        textAlign: TextAlign.start,
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20.0),
+                      ),
+                    ),
+                    SizedBox(
+                        height: 180.0,
+                        child: Consumer<CourseProvider>(
+                            builder: (context, courses, snapshot) {
+                          if (courses.highest.length == 0) {
+                            return Center(child: CircularProgressIndicator());
+                          }
+                          return ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: courses.highest.length,
+                              itemBuilder: (context, index) {
+                                CourseData courseData = courses.highest[index];
+                                return Padding(
+                                  padding: const EdgeInsets.only(left: 3.0),
+                                  child: Container(
+                                    child: Row(children: [
+                                      highestRatedCourses(
+                                          context,
+                                          courseData.coursePic,
+                                          courseData.courseName,
+                                          courseData.channelName,
+                                          courseData.id),
+                                    ]),
+                                  ),
+                                );
+                              });
+                        })),
+                    Padding(
+                      padding: EdgeInsets.only(top: 15.0, left: 5.0),
+                      child: Text(
+                        "Trending Courses",
+                        textAlign: TextAlign.start,
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20.0),
+                      ),
+                    ),
+                    SizedBox(
+                        height: 180.0,
+                        child: Consumer<CourseProvider>(
+                            builder: (context, courses, snapshot) {
+                          if (courses.trending.length == 0) {
+                            return Center(child: CircularProgressIndicator());
+                          }
+                          return ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: courses.trending.length,
+                              itemBuilder: (context, index) {
+                                CourseData courseData = courses.trending[index];
+                                return Padding(
+                                  padding: const EdgeInsets.only(left: 3.0),
+                                  child: Container(
+                                    child: Row(children: [
+                                      trendingCourses(
+                                          context,
+                                          courseData.coursePic,
+                                          courseData.courseName,
+                                          courseData.channelName,
+                                          courseData.id),
+                                    ]),
+                                  ),
+                                );
+                              });
+                        })),
+                  ])),
                 ));
           }
         });
