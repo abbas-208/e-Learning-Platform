@@ -241,7 +241,127 @@ class _CourseDetailsState extends State<CourseDetails> {
                             width: 0,
                             height: 0,
                           ),
-                
+                Center(
+                  child: Container(
+                      width: 380.0,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20.0),
+                          color: Colors.black),
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Text(
+                              "Course Name :" + course.courseData.courseName ??
+                                  "",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Text(
+                                "Course Description :" +
+                                        course.courseData.courseDescription ??
+                                    "",
+                                style: TextStyle(color: Colors.white)),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Text(
+                                "Channel Name :" +
+                                        course.courseData.channelName ??
+                                    "",
+                                style: TextStyle(color: Colors.white)),
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                              launch(course.courseData.courseUrl ?? "");
+                            },
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                  left: 18.0, top: 10.0, bottom: 10.0),
+                              child: Text(course.courseData.courseUrl ?? "",
+                                  style: TextStyle(color: Colors.blue)),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(10.0),
+                            child: Text(
+                                "Ratings :" +
+                                    currentRatings.toStringAsFixed(2) +
+                                    "⭐" +
+                                    " (" +
+                                    (course.courseData.ratedBy.length + 1)
+                                        .toString() +
+                                    " Reviews" +
+                                    ")",
+                                style: TextStyle(color: Colors.white)),
+                          ),
+                        ],
+                      )),
+                ),
+                name != null
+                    ? Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          "Comment",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 30.0,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      )
+                    : Text(""),
+                name != null
+                    ? Container(
+                        width: 350.0,
+                        child: TextFormField(
+                          controller: commentController,
+                          decoration: InputDecoration(
+                            border: OutlineInputBorder(),
+                            hintText: 'Comment Your Views on this Course',
+                          ),
+                        ),
+                      )
+                    : Text(""),
+                idU != null
+                    ? MaterialButton(
+                        onPressed: () async {
+                          commentController.text.isNotEmpty
+                              ? courseProvider(false)
+                                  .commentCourse(
+                                      commentController.text, widget.id)
+                                  .whenComplete(() {
+                                  commentController.clear();
+                                  Provider.of<CourseProvider>(context,
+                                          listen: false)
+                                      .getCourseData(widget.id);
+                                })
+                              : null;
+                        },
+                        child: Text(
+                          "Comment",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        color: Colors.black,
+                      )
+                    : Text(""),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    "Comments",
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 30.0,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+                course.courseData.comments.length == 0
+                    ? Text("No Comments Available")
+                    : commentWidget(course)
+              ],
+            ),
+          ),
         ),
       );
     });
